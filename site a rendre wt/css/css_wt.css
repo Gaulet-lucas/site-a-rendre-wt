@@ -1,0 +1,95 @@
+.head-USA, .head-URSS{
+    background: linear-gradient(179deg,rgba(9, 6, 26, 1) 16%, rgba(9, 6, 46, 1) 43%, rgba(25, 33, 71, 1) 77%);
+    text-align: center;
+    color: rgb(40, 126, 124);
+}
+.header-main{
+    background-color: rgb(27, 25, 25);
+    text-align: center;
+    color: rgb(40, 126, 124);
+}
+.menu-déroulant{
+    color: rgb(123, 169, 209);
+
+}
+
+.all-usa, .all-urss{
+display: flex;
+  justify-content: center;
+  text-size-adjust: 100%;
+
+}
+img{
+    width: 90%;
+}
+.Tank-usa, .Tank-urss{
+    border:solid;
+    border-color: rgb(73, 50, 50);
+    border-radius: 2%;
+    background-color: azure;
+    padding:0.5%; 
+    width: 33%;
+
+}
+.helicopter-usa, .helicopter-urss{
+    border:solid;
+    border-color: rgb(73, 50, 50);
+    border-radius: 2%;
+    background-color: azure;
+    padding:0.5%; 
+    width: 33%;
+}
+.Avion-usa, .Avion-urss{
+    border:solid;
+    border-color: rgb(73, 50, 50);
+    border-radius: 2%;
+    background-color: azure;
+    padding:0.5%; 
+    width: 33%;
+}
+
+body{
+    background: #020024;
+    background: linear-gradient(48deg, rgba(2, 0, 36, 1) 12%, rgba(9, 9, 121, 1) 63%, rgba(0, 212, 255, 1) 95%);
+    height:100vh;
+}
+.usa-lien, .urss-lien{
+    color:rgb(62, 62, 230);
+}
+.retour{
+    position: absolute;
+    left:10px;
+    background: linear-gradient(179deg,rgba(89, 101, 105, 1) 16%, rgba(73, 83, 89, 1) 32%, rgba(74, 76, 92, 1) 54%, rgba(77, 94, 94, 1) 64%);
+    border-radius: 2px;
+    padding: 3px;
+    color: #020024;
+}
+.all-pays{
+    display: flex;
+    min-width: 100vh;
+    border: 1px solid black;
+    width: 100px;
+    margin-left: 1%;
+    text-align: center;
+
+}
+.image_s{
+    padding: 2%;
+    width: 65%;
+}
+.urss-lien{
+    color: red;
+}
+.titre-usa{
+    background:linear-gradient(155deg,rgba(59, 0, 0, 1) 0%, rgba(196, 0, 20, 1) 45%, rgba(5, 39, 176, 1) 87%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.titre-URSS{
+    background:linear-gradient(180deg,rgba(0, 86, 89, 1) 16%, rgba(69, 4, 181, 1) 87%, rgba(29, 158, 184, 1) 48%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
