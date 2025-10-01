@@ -1,25 +1,26 @@
-.head-USA, .head-URSS{
+.head-USA{
     background: linear-gradient(179deg,rgba(9, 6, 26, 1) 16%, rgba(9, 6, 46, 1) 43%, rgba(25, 33, 71, 1) 77%);
-    text-align: center;
-    color: rgb(40, 126, 124);
 }
-
+.head-URSS{
+    background: linear-gradient(180deg,rgba(117, 29, 29, 1) 0%, rgba(158, 14, 14, 1) 35%, rgba(156, 39, 39, 1) 100%);
+}
+.head-USA, .head-URSS{
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 2%;
+}
 .header-main{
-    background-color: rgb(27, 25, 25);
     text-align: center;
+    background-color: rgb(27, 25, 25);
     color: rgb(40, 126, 124);
-}
-
-.menu-déroulant{
-    color: rgb(123, 169, 209);
-
+    border-radius: 15px;
 }
 
 .all-usa, .all-urss{
-display: flex;
+  display: flex;
   justify-content: center;
   text-size-adjust: 100%;
-
 }
 
 img{
@@ -27,48 +28,57 @@ img{
 }
 
 .Tank-usa, .Tank-urss{
-    border:solid;
-    border-color: rgb(73, 50, 50);
-    border-radius: 2%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
     background-color: azure;
     padding:0.5%; 
-    width: 33%;
-
+    width: 31%;
+    margin-right: 10px;
 }
 
 .helicopter-usa, .helicopter-urss{
-    border:solid;
-    border-color: rgb(73, 50, 50);
-    border-radius: 2%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
     background-color: azure;
     padding:0.5%; 
-    width: 33%;
+    width: 31%;
+    margin-left: 10px;
 }
 
 .Avion-usa, .Avion-urss{
-    border:solid;
-    border-color: rgb(73, 50, 50);
-    border-radius: 2%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
     background-color: azure;
     padding:0.5%; 
-    width: 33%;
+    width: 31%;
 }
-
-body{
-    background: #020024;
+.bod-main{
     background: linear-gradient(48deg, rgba(2, 0, 36, 1) 12%, rgba(9, 9, 121, 1) 63%, rgba(0, 212, 255, 1) 95%);
     height:100vh;
 }
 
-.usa-lien, .urss-lien{
+.USA-bod{
+    background: linear-gradient(48deg, rgba(2, 0, 36, 1) 12%, rgba(9, 9, 121, 1) 63%, rgba(0, 212, 255, 1) 95%);
+    height:100vh;
+}
+.URSS-bod{
+    background: linear-gradient(200deg,rgba(156, 25, 40, 1) 16%, rgba(82, 0, 0, 1) 43%, rgba(184, 24, 24, 1) 77%);
+    height:100vh;
+}
+
+.usa-lien{
     color:rgb(62, 62, 230);
+}
+.urss-lien{
+    color: red;
 }
 
 .retour{
     position: absolute;
     left:10px;
     background: linear-gradient(179deg,rgba(89, 101, 105, 1) 16%, rgba(73, 83, 89, 1) 32%, rgba(74, 76, 92, 1) 54%, rgba(77, 94, 94, 1) 64%);
-    border-radius: 2px;
+    border: #020024;
+    border-radius: 5px;
     padding: 3px;
     color: #020024;
 }
@@ -87,21 +97,50 @@ body{
     width: 65%;
 }
 
-.urss-lien{
-    color: red;
+.titre-URSS{
+    background: linear-gradient(180deg,rgba(36, 12, 12, 1) 0%, rgba(36, 12, 12, 1) 35%, rgba(36, 12, 12, 1) 100%);
 }
 
 .titre-usa{
-    background:linear-gradient(155deg,rgba(59, 0, 0, 1) 0%, rgba(196, 0, 20, 1) 45%, rgba(5, 39, 176, 1) 87%);
+    background:linear-gradient(180deg,rgba(0, 86, 89, 1) 16%, rgba(69, 4, 181, 1) 87%, rgba(29, 158, 184, 1) 48%);
+}
+.titre-URSS, .titre-usa{
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+.footer-URSS, .footer-USA{
+    margin-top: 15px;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background-color: aliceblue;
+    padding: 3px;
 }
 
-.titre-URSS{
+.résumer-USA{
     background:linear-gradient(180deg,rgba(0, 86, 89, 1) 16%, rgba(69, 4, 181, 1) 87%, rgba(29, 158, 184, 1) 48%);
+}
+.résumer-URSS{
+    background: linear-gradient(180deg,rgba(117, 29, 29, 1) 0%, rgba(158, 14, 14, 1) 35%, rgba(156, 39, 39, 1) 100%);
+}
+.résumer-USA, .résumer-URSS{
+    margin: -4px;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
+.USA h2{
+    background:linear-gradient(180deg,rgba(0, 86, 89, 1) 16%, rgba(69, 4, 181, 1) 87%, rgba(29, 158, 184, 1) 48%);
+}
+.URSS h2{
+    background: linear-gradient(180deg,rgba(117, 29, 29, 1) 0%, rgba(158, 14, 14, 1) 35%, rgba(156, 39, 39, 1) 100%);
+}
+.USA h2, .URSS h2{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 2px;
+} 
+
 
