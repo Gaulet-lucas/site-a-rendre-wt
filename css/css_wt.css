@@ -10,7 +10,10 @@
 .head-grande_bretagne{
     background: linear-gradient(142deg,rgba(204, 53, 53, 1) 24%, rgba(207, 209, 227, 1) 50%, rgba(44, 64, 219, 1) 81%);
 }
-.head-USA, .head-URSS, .head-ALLEMAGNE, .head-grande_bretagne {
+.head-france{
+    background: linear-gradient(142deg,rgba(255, 0, 0, 1) 24%, rgba(105, 108, 120, 1) 50%, rgba(44, 64, 219, 1) 56%);
+}
+.head-USA, .head-URSS, .head-ALLEMAGNE, .head-grande_bretagne, .head-france {
     border: 2px solid black;
     text-align: center;
     border-radius: 15px;
@@ -29,7 +32,7 @@
     color: transparent;
 }
 
-.all-usa, .all-urss, .all-allemagne, .all-grande_bretagne{    
+.all-usa, .all-urss, .all-allemagne, .all-grande_bretagne, .all-france{    
   display: flex;
   justify-content: center;
   text-size-adjust: 100%;
@@ -39,7 +42,7 @@ img{
     width: 90%;
 }
 
-.Tank-usa, .Tank-urss, .Tank-allemagne, .Tank-grande_bretagne{
+.Tank-usa, .Tank-urss, .Tank-allemagne, .Tank-grande_bretagne, .Tank-france{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 15px;
     background: linear-gradient(180deg,rgba(245, 245, 245, 1) 50%, rgba(250, 250, 250, 1) 100%);
@@ -48,7 +51,7 @@ img{
     margin-right: 10px;
 }
 
-.helicopter-usa, .helicopter-urss, .helicopter-allemagne, .helicopter-grande_bretagne{
+.helicopter-usa, .helicopter-urss, .helicopter-allemagne, .helicopter-grande_bretagne, .helicopter-france{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 15px;
     background: linear-gradient(180deg,rgba(245, 245, 245, 1) 50%, rgba(250, 250, 250, 1) 100%);
@@ -57,7 +60,7 @@ img{
     margin-left: 10px;
 }
 
-.Avion-usa, .Avion-urss, .Avion-allemagne, .Avion-grande_bretagne{
+.Avion-usa, .Avion-urss, .Avion-allemagne, .Avion-grande_bretagne, .Avion-france{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 15px;
     background: linear-gradient(180deg,rgba(245, 245, 245, 1) 50%, rgba(250, 250, 250, 1) 100%);
@@ -86,6 +89,10 @@ img{
     background: radial-gradient(circle,rgba(4, 41, 222, 1) 0%, rgba(139, 126, 196, 1) 32%, rgba(140, 94, 98, 1) 52%, rgba(232, 58, 87, 1) 81%, rgba(224, 0, 45, 1) 100%);
     height: 100%;
 }
+.france-bod{
+    background: linear-gradient(142deg,rgba(255, 0, 0, 1) 24%, rgba(105, 108, 120, 1) 50%, rgba(44, 64, 219, 1) 56%);
+    height: 100%;
+}
 
 .retour{
     position: absolute;
@@ -112,10 +119,50 @@ img{
     height: 250px;
     border: 1px solid #020024;
 }
+.USA div, .URSS div, .ALLEMAGNE div, .GRANDE_BRETAGNE div, .ITALY div, .FRANCE div, .SUEDE div, .ISRAEL div{
+    background: linear-gradient(to right, transparent, black, transparent);
+    width: 350px;
+    margin: auto;
+    
+}
 .image_s{
     width: 80%;
 }
-a .grade-usa, a .grade-urss, a .grade-allemagne, a .grade-grande_bretagne {
+.USA .USA-boutton, .URSS .URSS-boutton, .ALLEMAGNE .ALLEMAGNE-boutton, .GRANDE_BRETAGNE .GRANDE_BRETAGNE-boutton, .ITALY .ITALY-boutton, .FRANCE .FRANCE-boutton, .SUEDE .SUEDE-boutton, .ISRAEL .ISRAEL-boutton{
+    position: relative;
+    right: -150px;
+    top: -20px;
+    font-weight: bold;
+}
+
+
+.USA h1, .URSS h1, .ITALY h1, .FRANCE h1, .SUEDE h1, .ISRAEL h1{
+    background-color: #5e58d138;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 150px;
+    color: whitesmoke;
+}
+
+.GRANDE_BRETAGNE h1{
+    color: whitesmoke;
+    background-color: #5e58d138;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 200px;
+}
+
+.ALLEMAGNE h1{
+    color: whitesmoke;
+    background-color: #5e58d138;
+    border-radius: 5px;
+    position: relative;
+    left: -50px;
+    border: 1px solid black;
+    width: 250px;
+}
+
+a .grade-usa, a .grade-urss, a .grade-allemagne, a .grade-grande_bretagne, a .grade-france {
   display: inline-block;
   background-clip: text;
   -webkit-background-clip: text;        
@@ -135,7 +182,10 @@ a .grade-usa, a .grade-urss, a .grade-allemagne, a .grade-grande_bretagne {
 .grande_bretagne-lien .grade-grande_bretagne{
     background-image:linear-gradient(142deg,rgba(204, 53, 53, 1) 24%, rgba(207, 209, 227, 1) 50%, rgba(44, 64, 219, 1) 81%);
 }
-a:visited .grade-usa, a:visited .grade-urss, a:visited .grade-allemagne, a:visited .grade-grande_bretagne {
+.france-lien .garde-france{
+   background: linear-gradient(142deg,rgba(255, 0, 0, 1) 24%, rgba(105, 108, 120, 1) 50%, rgba(44, 64, 219, 1) 56%);
+}
+a:visited .grade-usa, a:visited .grade-urss, a:visited .grade-allemagne, a:visited .grade-grande_bretagne, a:visited .garde-france{
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
@@ -149,15 +199,18 @@ a:visited .grade-usa, a:visited .grade-urss, a:visited .grade-allemagne, a:visit
 .titre-allemagne{
     background: linear-gradient(260deg,rgba(194, 158, 29, 1) 33%, rgba(224, 40, 11, 1) 66%, rgba(143, 43, 119, 1) 100%);
 }
-.titre-bg{
+.titre-grandre_bretagne{
     background: linear-gradient(142deg,rgba(255, 0, 0, 1) 24%, rgba(105, 108, 120, 1) 50%, rgba(44, 64, 219, 1) 56%);
 }
-.titre-URSS, .titre-usa, .titre-allemagne, .titre-bg{
+.titre-france{
+    background: linear-gradient(260deg,rgba(194, 158, 29, 1) 33%, rgba(224, 40, 11, 1) 66%, rgba(143, 43, 119, 1) 100%);
+}
+.titre-URSS, .titre-usa, .titre-allemagne, .titre-grandre_bretagne, .titre-france{
     -webkit-background-clip: text;  
     background-clip: text;
     color: transparent;
 }
-.footer-URSS, .footer-USA, .footer-ALLEMAGNE, .footer-grande_bretagne{
+.footer-URSS, .footer-USA, .footer-ALLEMAGNE, .footer-grande_bretagne, .footer-france{
     margin-top: 15px;
     text-align: center;
     border: 2px solid rgb(0, 0, 0);
@@ -178,13 +231,17 @@ a:visited .grade-usa, a:visited .grade-urss, a:visited .grade-allemagne, a:visit
 .résumer-grande_bretagne{
     background: linear-gradient(142deg,rgba(255, 0, 0, 1) 24%, rgba(105, 108, 120, 1) 50%, rgba(44, 64, 219, 1) 56%);
 }
-.résumer-USA, .résumer-URSS, .résumer-ALLEMAGNE, .résumer-grande_bretagne{
+.résumer-FRANCE{
+    background: linear-gradient(142deg,rgba(255, 0, 0, 1) 24%, rgba(105, 108, 120, 1) 50%, rgba(44, 64, 219, 1) 56%);
+}
+.résumer-USA, .résumer-URSS, .résumer-ALLEMAGNE, .résumer-grande_bretagne, .résumer-FRANCE{
     margin: -4px;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 .USA h2{
+    
     background:linear-gradient(180deg,rgba(0, 86, 89, 1) 16%, rgba(69, 4, 181, 1) 87%, rgba(29, 158, 184, 1) 48%);
 }
 
@@ -197,7 +254,10 @@ a:visited .grade-usa, a:visited .grade-urss, a:visited .grade-allemagne, a:visit
 .GRANDE_BRETAGNE h2{
     background: linear-gradient(142deg,rgba(255, 0, 0, 1) 24%, rgba(105, 108, 120, 1) 50%, rgba(44, 64, 219, 1) 56%);
 }
-.USA h2, .URSS h2, .ALLEMAGNE h2, .GRANDE_BRETAGNE h2{
+.FRANCE h2{ 
+    background: linear-gradient(142deg,rgba(255, 0, 0, 1) 24%, rgba(105, 108, 120, 1) 50%, rgba(44, 64, 219, 1) 56%);
+}
+.USA h2, .URSS h2, .ALLEMAGNE h2, .GRANDE_BRETAGNE h2, .FRANCE h2{
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
