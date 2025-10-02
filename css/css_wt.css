@@ -5,7 +5,7 @@
     background: linear-gradient(180deg,rgba(117, 29, 29, 1) 0%, rgba(158, 14, 14, 1) 35%, rgba(156, 39, 39, 1) 100%);
 }
 .head-ALLEMAGNE{
-    background: linear-gradient(blue);
+    background: linear-gradient(162deg,rgba(168, 166, 3, 1) 20%, rgba(120, 37, 37, 1) 53%, rgba(23, 11, 11, 1) 84%);
 }
 .head-USA, .head-URSS, .head-ALLEMAGNE {
     border: 2px solid black;
@@ -36,7 +36,7 @@ img{
     width: 90%;
 }
 
-.Tank-usa, .Tank-urss{
+.Tank-usa, .Tank-urss, .Tank-allemagne{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 15px;
     background: linear-gradient(180deg,rgba(245, 245, 245, 1) 50%, rgba(250, 250, 250, 1) 100%);
@@ -45,7 +45,7 @@ img{
     margin-right: 10px;
 }
 
-.helicopter-usa, .helicopter-urss{
+.helicopter-usa, .helicopter-urss, .helicopter-allemagne{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 15px;
     background: linear-gradient(180deg,rgba(245, 245, 245, 1) 50%, rgba(250, 250, 250, 1) 100%);
@@ -54,7 +54,7 @@ img{
     margin-left: 10px;
 }
 
-.Avion-usa, .Avion-urss{
+.Avion-usa, .Avion-urss, .Avion-allemagne{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 15px;
     background: linear-gradient(180deg,rgba(245, 245, 245, 1) 50%, rgba(250, 250, 250, 1) 100%);
@@ -74,6 +74,10 @@ img{
     background: linear-gradient(200deg,rgba(156, 25, 40, 1) 16%, rgba(82, 0, 0, 1) 43%, rgba(184, 24, 24, 1) 77%);
     height:100%;
 }
+.ALLEMAGNE-bod{
+    background: linear-gradient(300deg,rgba(102, 82, 11, 1) 33%, rgba(68, 77, 25, 1) 66%, rgba(47, 33, 59, 1) 100%);
+    height: 100%;
+}
 
 .usa-lien{
     color:rgb(62, 62, 230);
@@ -85,15 +89,17 @@ img{
 .retour{
     position: absolute;
     left:10px;
+    top: 9.5px;
     background: linear-gradient(179deg,rgba(89, 101, 105, 1) 16%, rgba(73, 83, 89, 1) 32%, rgba(74, 76, 92, 1) 54%, rgba(77, 94, 94, 1) 64%);
     border: #020024;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 3px;
     color: #020024;
 }
 
-.all-pays{
+.all-pays1{
     display: flex;
+    flex-direction: row;
     min-width: 100vh;
     border: 1px solid black;
     width: 100px;
@@ -113,12 +119,15 @@ img{
 .titre-usa{
     background:linear-gradient(180deg,rgba(0, 86, 89, 1) 16%, rgba(69, 4, 181, 1) 87%, rgba(29, 158, 184, 1) 48%);
 }
-.titre-URSS, .titre-usa{
+.titre-allemagne{
+    background: linear-gradient(260deg,rgba(194, 158, 29, 1) 33%, rgba(224, 40, 11, 1) 66%, rgba(143, 43, 119, 1) 100%);
+}
+.titre-URSS, .titre-usa, .titre-allemagne{
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
-.footer-URSS, .footer-USA{
+.footer-URSS, .footer-USA, .footer-ALLEMAGNE{
     margin-top: 15px;
     text-align: center;
     border: 2px solid rgb(0, 0, 0);
@@ -133,7 +142,10 @@ img{
 .résumer-URSS{
     background: linear-gradient(180deg,rgba(117, 29, 29, 1) 0%, rgba(158, 14, 14, 1) 35%, rgba(156, 39, 39, 1) 100%);
 }
-.résumer-USA, .résumer-URSS{
+.résumer-ALLEMAGNE{
+    background: linear-gradient(260deg,rgba(194, 158, 29, 1) 33%, rgba(224, 40, 11, 1) 66%, rgba(143, 43, 119, 1) 100%);
+}
+.résumer-USA, .résumer-URSS, .résumer-ALLEMAGNE{
     margin: -4px;
     -webkit-background-clip: text;
     background-clip: text;
@@ -145,8 +157,8 @@ img{
 .URSS h2{
     background: linear-gradient(180deg,rgba(117, 29, 29, 1) 0%, rgba(158, 14, 14, 1) 35%, rgba(156, 39, 39, 1) 100%);
 }
-.ALLEMAGNE H2{
-    background-color:red ;
+.ALLEMAGNE h2{
+    background: linear-gradient(260deg,rgba(194, 158, 29, 1) 33%, rgba(224, 40, 11, 1) 66%, rgba(143, 43, 119, 1) 100%);
 }
 .USA h2, .URSS h2, .ALLEMAGNE h2{
     -webkit-background-clip: text;
