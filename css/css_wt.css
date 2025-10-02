@@ -98,22 +98,23 @@ img{
     color: #020024;
 }
 .all-pays{
+    height: 75vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-content: space-between ;
+    justify-content: space-around;
     flex-wrap: wrap;
-    align-content: flex-end;
-}
-.all-pays{
     border:1px solid #020024;
-    height: 500px;
 }
 
+.USA, .URSS, .ALLEMAGNE, .GRANDE_BRETAGNE, .ITALY, .FRANCE, .SUEDE, .ISRAEL{
+    width: 450px;
+    height: 250px;
+    border: 1px solid #020024;
+}
 .image_s{
-    width: 65%;
+    width: 80%;
 }
-
 a .grade-usa, a .grade-urss, a .grade-allemagne, a .grade-grande_bretagne {
   display: inline-block;
   background-clip: text;
