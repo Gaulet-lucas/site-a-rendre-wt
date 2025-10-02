@@ -4,7 +4,10 @@
 .head-URSS{
     background: linear-gradient(180deg,rgba(117, 29, 29, 1) 0%, rgba(158, 14, 14, 1) 35%, rgba(156, 39, 39, 1) 100%);
 }
-.head-USA, .head-URSS{
+.head-ALLEMAGNE{
+    background: linear-gradient(blue);
+}
+.head-USA, .head-URSS, .head-ALLEMAGNE {
     border: 2px solid black;
     text-align: center;
     border-radius: 15px;
@@ -23,7 +26,7 @@
     color: transparent;
 }
 
-.all-usa, .all-urss{    
+.all-usa, .all-urss, .all-allemagne{    
   display: flex;
   justify-content: center;
   text-size-adjust: 100%;
@@ -142,7 +145,10 @@ img{
 .URSS h2{
     background: linear-gradient(180deg,rgba(117, 29, 29, 1) 0%, rgba(158, 14, 14, 1) 35%, rgba(156, 39, 39, 1) 100%);
 }
-.USA h2, .URSS h2{
+.ALLEMAGNE H2{
+    background-color:red ;
+}
+.USA h2, .URSS h2, .ALLEMAGNE h2{
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
