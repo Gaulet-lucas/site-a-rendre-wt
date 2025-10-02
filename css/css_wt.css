@@ -111,19 +111,48 @@ img{
     padding: 2%;
     width: 65%;
 }
-
+img{
+    width: 90%;
+}
+a .grade-usa, a .grade-urss, a .grade-allemagne, a .grade-grande_bretagne {
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;        
+  -webkit-text-fill-color: transparent; 
+  color: transparent;                   
+  transition: opacity .2s ease;
+}
+.usa-lien .grade-usa {
+  background-image:linear-gradient(180deg,rgba(0, 86, 89, 1) 16%, rgba(69, 4, 181, 1) 87%, rgba(29, 158, 184, 1) 48%);
+}
+.urss-lien .grade-urss{
+   background-image:linear-gradient(180deg,rgba(117, 29, 29, 1) 0%, rgba(158, 14, 14, 1) 35%, rgba(156, 39, 39, 1) 100%); 
+}
+.allemagne-lien .grade-allemagne{
+    background-image:linear-gradient(260deg,rgba(194, 158, 29, 1) 33%, rgba(224, 40, 11, 1) 66%, rgba(143, 43, 119, 1) 100%);
+}
+.grande_bretagne-lien .grade-grande_bretagne{
+    background-image:linear-gradient(142deg,rgba(204, 53, 53, 1) 24%, rgba(207, 209, 227, 1) 50%, rgba(44, 64, 219, 1) 81%);
+}
+a:visited .grade-usa, a:visited .grade-urss, a:visited .grade-allemagne, a:visited .grade-grande_bretagne {
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
 .titre-URSS{
     background: linear-gradient(180deg,rgba(36, 12, 12, 1) 0%, rgba(36, 12, 12, 1) 35%, rgba(36, 12, 12, 1) 100%);
 }
 
 .titre-usa{
-    background:linear-gradient(180deg,rgba(0, 86, 89, 1) 16%, rgba(69, 4, 181, 1) 87%, rgba(29, 158, 184, 1) 48%);
+    background: linear-gradient(180deg,rgba(0, 86, 89, 1) 16%, rgba(69, 4, 181, 1) 87%, rgba(29, 158, 184, 1) 48%);
 }
 .titre-allemagne{
     background: linear-gradient(260deg,rgba(194, 158, 29, 1) 33%, rgba(224, 40, 11, 1) 66%, rgba(143, 43, 119, 1) 100%);
 }
-.titre-URSS, .titre-usa, .titre-allemagne{
-    -webkit-background-clip: text;
+.titre-bg{
+    background: linear-gradient(142deg,rgba(255, 0, 0, 1) 24%, rgba(105, 108, 120, 1) 50%, rgba(44, 64, 219, 1) 56%);
+}
+.titre-URSS, .titre-usa, .titre-allemagne, .titre-bg{
+    -webkit-background-clip: text;  
     background-clip: text;
     color: transparent;
 }
@@ -146,7 +175,7 @@ img{
     background: linear-gradient(260deg,rgba(194, 158, 29, 1) 33%, rgba(224, 40, 11, 1) 66%, rgba(143, 43, 119, 1) 100%);
 }
 .résumer-grande_bretagne{
-    background: blue;
+    background: linear-gradient(142deg,rgba(255, 0, 0, 1) 24%, rgba(105, 108, 120, 1) 50%, rgba(44, 64, 219, 1) 56%);
 }
 .résumer-USA, .résumer-URSS, .résumer-ALLEMAGNE, .résumer-grande_bretagne{
     margin: -4px;
@@ -157,7 +186,7 @@ img{
 .USA h2{
     background:linear-gradient(180deg,rgba(0, 86, 89, 1) 16%, rgba(69, 4, 181, 1) 87%, rgba(29, 158, 184, 1) 48%);
 }
-.usa-lien a:visited {color: #020024;}
+
 .URSS h2{
     background: linear-gradient(180deg,rgba(117, 29, 29, 1) 0%, rgba(158, 14, 14, 1) 35%, rgba(156, 39, 39, 1) 100%);
 }
@@ -165,7 +194,7 @@ img{
     background: linear-gradient(260deg,rgba(194, 158, 29, 1) 33%, rgba(224, 40, 11, 1) 66%, rgba(143, 43, 119, 1) 100%);
 }
 .GRANDE_BRETAGNE h2{
-    background: yellow;
+    background: linear-gradient(142deg,rgba(255, 0, 0, 1) 24%, rgba(105, 108, 120, 1) 50%, rgba(44, 64, 219, 1) 56%);
 }
 .USA h2, .URSS h2, .ALLEMAGNE h2, .GRANDE_BRETAGNE h2{
     -webkit-background-clip: text;
