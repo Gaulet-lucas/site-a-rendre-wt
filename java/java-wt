@@ -1,0 +1,77 @@
+function choisirReponse(bouton, questionId, valeur) {
+    var parent = bouton.parentElement;
+    var boutons = parent.querySelectorAll('.btn-option');
+    for (var i = 0; i < boutons.length; i++) {
+        boutons[i].classList.remove('selected');
+    }
+    bouton.classList.add('selected');
+    
+    document.getElementById(questionId).value = valeur;
+}
+
+function valider() {
+    var score = 0;
+    var total = 8;
+
+    var r1 = document.getElementById('q1').value;
+    if (r1 === "l'AH-64" || r1 === "le AH-64") {
+        score++;
+    }
+    
+    var r2 = document.getElementById('q2').value;
+    if (r2 === "Une technologie moin avancée") {
+        score++;
+    }
+    
+    var r3 = document.getElementById('q3').value;
+    if (r3 === "Une technologie avancée") {
+        score++;
+    }
+    
+    var r4 = document.querySelector('input[name="q4"]:checked');
+    if (r4 && r4.value === "oui") {
+        score++;
+    }
+    
+    var coches = document.querySelectorAll('input[name="q5"]:checked');
+    var bonnesReponses = 0;
+    var mauvaisesReponses = 0;
+    
+    for (var i = 0; i < coches.length; i++) {
+        if (coches[i].value === "NH90" || coches[i].value === "AW129") {
+            bonnesReponses++;
+        } else {
+            mauvaisesReponses++;
+        }
+    }
+    
+    if (bonnesReponses === 2 && mauvaisesReponses === 0) {
+        score++;
+    }
+    
+    var r6 = document.getElementById('q6').value;
+    if (r6 == 3) {
+        score++;
+    }
+    
+    var r7 = document.getElementById('q7').value;
+    if (r7 === "leopard") {
+        score++;
+    }
+    
+    var r8 = document.getElementById('q8').value;
+    if (r8 === "F-35") {
+        score++;
+    }
+    
+    var resultat = document.getElementById('resultat');
+    resultat.innerHTML = "Votre score : " + score + " / " + total;
+    
+    if (score === total) {
+        resultat.innerHTML += "<br> Parfait tu a bien lu le wiki !";
+    } else if (score >= 4) {
+        resultat.innerHTML += "<br> Pas mal mais il faut relire!";
+    } else {
+        resultat.innerHTML += "<br> Est tu sûre d'avoir lu le wiki ?";
+    }
+}

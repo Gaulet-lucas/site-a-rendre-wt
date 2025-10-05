@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" /> 
+        <meta name="viewport" content="width=device-width,initial-scale=1" />           
+        <title class="quizz-title">QUIZZ War-thunder</title>     
+        <link rel="stylesheet" type="text/css" href="css/css_wt.css">
+        <script type="text/javascript" src="java/java-wt"></script>
+        <link rel="icon" href="">
+    </head>
+<body class="quizz-bod">
+    <header class="head-quizz">
+        <h1 class="titre-quizz">Petit Quizz War-Thunder </h1>  
+        <a class="retour" href="index.html"> Acceuil </a> 
+    </header>
+
+    <div class="question">
+        <label>Question 1 : Quelle est l'hélicoptère d'attaque spécialisés dans les USA ?</label><br><br>
+        <input type="text" id="q1" placeholder="Tapez votre réponse">
+    </div>
+
+    <div class="question">
+        <label>Question 2 : Quelle était la faiblesses des chars Russe ?</label><br><br>
+        <select id="q2">
+            <option value="">-- Choisissez --</option>
+            <option value="mobilitée">Un manque de mobilitée</option>
+            <option value="technologie">Une technologie moin avancée</option>
+            <option value="production">Un problème de production</option>
+            <option value="équipage">Un manque de membre d'équipage</option>
+        </select>
+    </div>
+
+    <div class="question">
+        <label>Question 3 : L'armée allemande se distingue par ?</label><br><br>
+        <button class="btn-option" onclick="choisirReponse(this, 'q3', 'technologie')">Une technologie avancée</button>
+        <button class="btn-option" onclick="choisirReponse(this, 'q3', 'militaire')">Un corps militaire surentrainer </button>
+        <button class="btn-option" onclick="choisirReponse(this, 'q3', 'puissance')">Un manque considérable de puissance de feux </button>
+        <input type="hidden" id="q3" value="">
+    </div>
+
+    <div class="question">
+        <label>Question 4 : Quelle avion de transport stratégique est-il énoncée  ?</label><br><br>
+        <input type="radio" name="q4" value="oui"> A400M Atlas<br>
+        <input type="radio" name="q4" value="non"> Heyl Ha’Avir<br>
+    </div>
+
+    <div class="question">
+        <label>Question 5 : Quels modèles d'hélicoptères l'Italy a t-elle ? (plusieurs réponses)</label><br><br>
+        <input type="checkbox" name="q5" value="NH90"> le NH90<br>
+        <input type="checkbox" name="q5" value="Merlin HM2"> le Merlin HM2<br>
+        <input type="checkbox" name="q5" value="AW129"> le AW129<br>
+        <input type="checkbox" name="q5" value="UH-60"> le UH-60<br>
+    </div>
+
+    <div class="question">
+        <label>Question 6 : Combien de chars sont-il énoncée pour la France ?</label><br><br>
+        <input type="number" id="q6" min="1" max="10" placeholder="Nombre">
+    </div>
+
+    <div class="question">
+        <label>Question 7 : De quelle chars a inspirée le Stridsvagn 122 ?</label><br><br>
+        <select id="q7">
+            <option value="">-- Choisissez --</option>
+            <option value="M1A1">Le M1A1 Abrams</option>
+            <option value="Lecler">Le Lecler</option>
+            <option value="leopard">le Leopard 2</option>
+            <option value="M48">le M48</option>
+        </select>
+    </div>
+
+    <div class="question">
+        <label>Question 8 : L'avion avec lequelle l'Israel s'est renforcée est ? </label><br><br>
+        <button class="btn-option" onclick="choisirReponse(this, 'q8', 'F-35')">F-35I Adir</button>
+        <button class="btn-option" onclick="choisirReponse(this, 'q8', 'F-16')">F-16</button>
+        <input type="hidden" id="q8" value="">
+    </div>
+
+    <button onclick="valider()">Valider les réponses</button>
+
+    <div id="resultat"></div>
+
+
+
+
+
+</body>
+</html>
