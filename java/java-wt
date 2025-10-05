@@ -19,12 +19,12 @@ function valider() {
     }
     
     var r2 = document.getElementById('q2').value;
-    if (r2 === "Une technologie moin avancée") {
+    if (r2 === "technologie") {
         score++;
     }
     
     var r3 = document.getElementById('q3').value;
-    if (r3 === "Une technologie avancée") {
+    if (r3 === "technologie") {
         score++;
     }
     
