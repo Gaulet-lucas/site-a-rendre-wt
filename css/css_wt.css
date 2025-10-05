@@ -78,9 +78,8 @@ img{
 }
 .bod-main{
     background: linear-gradient(191deg,rgba(87, 7, 7, 1) 15%, rgba(107, 10, 75, 1) 50%, rgba(62, 21, 69, 1) 76%, rgba(43, 7, 7, 1) 100%);
-    height:1000px;
+    height:1200px; 
     text-align: center;
-    background-repeat: no-repeat;
 }
 
 .USA-bod{
@@ -126,6 +125,16 @@ img{
     padding: 3px;
     color: #020024;
 }
+.GIT-boutton{
+    position: absolute;
+    left: 200px;
+    top: 30px;
+    background: rgb(56, 55, 55);
+    border: #020024;
+    border-radius: 10px;
+    padding: 3px;
+    color: #c3c3c3;
+}
 .QUIZZ-boutton{
     position: absolute;
     left: 1200px;
@@ -142,6 +151,7 @@ img{
     flex-direction: row;
     justify-content: center;
     justify-content: space-around;
+    padding: 20px;
     flex-wrap: wrap;
     border:1px solid #020024;
 }
