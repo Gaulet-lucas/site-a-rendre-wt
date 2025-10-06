@@ -57,6 +57,12 @@ img{
     left: 450px;
     top: -130px;
 }
+.img-usa-gauche {
+    width: 15%;
+    position: relative;
+    left: -500px;
+    top: -130px;
+}   
 
 .Tank-usa, .Tank-urss, .Tank-allemagne, .Tank-grande_bretagne, .Tank-italy, .Tank-france, .Tank-suede, .Tank-israel{
     border: 2px solid rgb(0, 0, 0);
