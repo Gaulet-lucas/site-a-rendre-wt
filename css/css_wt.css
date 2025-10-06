@@ -25,6 +25,7 @@
 .head-USA, .head-URSS, .head-ALLEMAGNE, .head-grande_bretagne, .head-italy, .head-france, .head-suede, .head-israel {
     border: 2px solid black;
     text-align: center;
+    height: 150px;
     border-radius: 15px;
     margin-bottom: 2%;
 }
@@ -49,6 +50,12 @@
 
 img{
     width: 90%;
+}
+.img-usa-droite {
+    width: 15%;
+    position: relative;
+    left: 450px;
+    top: -130px;
 }
 
 .Tank-usa, .Tank-urss, .Tank-allemagne, .Tank-grande_bretagne, .Tank-italy, .Tank-france, .Tank-suede, .Tank-israel{
@@ -116,14 +123,16 @@ img{
 }
 
 .retour{
-    position: absolute;
-    left:10px;
-    top: 9.5px;
+    position: relative;
+    left:-695px;
+    top: 11px;
     background: linear-gradient(179deg,rgba(89, 101, 105, 1) 16%, rgba(73, 83, 89, 1) 32%, rgba(74, 76, 92, 1) 54%, rgba(77, 94, 94, 1) 64%);
     border: #020024;
     border-radius: 10px;
-    padding: 3px;
-    color: #020024;
+    padding: 10px;
+    font-weight: bold;
+    color: #000000;
+    height: 150px;
 }
 .GIT-boutton{
     position: absolute;
