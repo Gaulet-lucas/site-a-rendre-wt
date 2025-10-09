@@ -128,7 +128,7 @@ img{
 }
 .bod-main{
     background: linear-gradient(191deg,rgba(87, 7, 7, 1) 15%, rgba(107, 10, 75, 1) 50%, rgba(62, 21, 69, 1) 76%, rgba(43, 7, 7, 1) 100%);
-    height: 1200px;
+    height: 1300px;
     text-align: center;
 }
 
@@ -394,7 +394,14 @@ a:visited .grade-usa, a:visited .grade-urss, a:visited .grade-allemagne, a:visit
     background: linear-gradient(180deg,rgba(245, 245, 245, 1) 50%, rgba(250, 250, 250, 1) 100%);
     padding: 3px;
 }
-
+.footer-main{
+    margin-top: 200px;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background: linear-gradient(191deg,rgba(87, 7, 7, 1) 15%, rgba(107, 10, 75, 1) 50%, rgba(62, 21, 69, 1) 76%, rgba(43, 7, 7, 1) 100%);
+    padding: 3px;
+}
 .résumer-usa{
     background:linear-gradient(180deg,rgba(0, 86, 89, 1) 16%, rgba(69, 4, 181, 1) 87%, rgba(29, 158, 184, 1) 48%);
 }
