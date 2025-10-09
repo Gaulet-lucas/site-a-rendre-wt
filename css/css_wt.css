@@ -42,7 +42,18 @@
     background-clip: text;
     color: transparent;
 }
-
+.quizz-bod {
+    text-align: center;
+    font-family: Arial;
+    margin: 50px;
+    height: 100%;
+    background: linear-gradient(191deg,rgba(135, 11, 11, 1) 15%, rgba(130, 47, 102, 1) 50%, rgba(103, 17, 120, 1) 76%, rgba(82, 18, 18, 1) 100%);
+    color: rgb(9, 15, 15);
+    border-radius: 15px;
+}
+.head-quizz{
+    color:rgb(135,206,235);
+}
 .all-usa, .all-urss, .all-allemagne, .all-grande_bretagne, .all-italy, .all-france, .all-suede, .all-israel{    
   display: flex;
   justify-content: center;
@@ -52,18 +63,43 @@
 img{
     width: 90%;
 }
-.img-usa-droite, .img-urss-droite, .img-allemagne-droite{
+.img-usa-droite, .img-urss-droite, .img-allemagne-droite, .img-GB-droite, .img-italy-droite, .img-suede-droite{
     width: 12%;
     position: relative;
     left: 600px;
     top: -130px;
 }
-.img-usa-gauche, .img-urss-gauche, .img-allemagne-gauche{
+
+.img-usa-gauche, .img-urss-gauche, .img-allemagne-gauche, .img-GB-gauche, .img-italy-gauche, .img-suede-gauche{
     width: 12%;
     position: relative;
     left: -600px;
     top: -130px;
 }   
+.img-france-droite{
+    width: 12%;
+    position: relative;
+    left: 600px;
+    top: -160px;
+}
+.img-france-gauche{
+    width: 12%;
+    position: relative;
+    left: -600px;
+    top: -140px;
+}
+.img-israel-droite{
+    width: 12%;
+    position: relative;
+    left: 600px;
+    top: -145px;
+}
+.img-israel-gauche{
+    width: 12%;
+    position: relative;
+    left: -600px;
+    top: -140px;
+}
 
 .Tank-usa, .Tank-urss, .Tank-allemagne, .Tank-grande_bretagne, .Tank-italy, .Tank-france, .Tank-suede, .Tank-israel{
     border: 2px solid rgb(0, 0, 0);
@@ -157,6 +193,22 @@ img{
     padding: 3px;
     color: #c3c3c3;
 }
+.retour-quizz{
+    position: relative;
+    text-align:center ;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    background: rgb(56, 55, 55);
+    border: #020024;
+    border-radius: 10px;
+    padding: 3px;
+    color: #c3c3c3;
+}
 .QUIZZ-boutton h3 {
     position: relative;
     text-align:center ;
@@ -173,6 +225,7 @@ img{
     padding: 3px;
     color: #c3c3c3;
 }
+
 .all-pays{
     height: 75vh;
     display: flex;
@@ -402,16 +455,6 @@ a:visited .grade-usa, a:visited .grade-urss, a:visited .grade-allemagne, a:visit
     color: transparent;
     margin-bottom: 2px;
 } 
-
-.quizz-bod {
-    font-family: Arial;
-    margin: 50px;
-    background-color: #f0f0f0;
-}
-
-.quizz-bod h1{
-    color: #333;
-}
 
 .question {
     background-color: white;
