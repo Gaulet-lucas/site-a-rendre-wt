@@ -31,6 +31,7 @@
 }
 .header-main{
     text-align: center;
+    height: 175px;
     background: linear-gradient(191deg,rgba(135, 11, 11, 1) 15%, rgba(130, 47, 102, 1) 50%, rgba(103, 17, 120, 1) 76%, rgba(82, 18, 18, 1) 100%);
     color: rgb(40, 126, 124);
     border-radius: 15px;
@@ -51,16 +52,16 @@
 img{
     width: 90%;
 }
-.img-usa-droite {
-    width: 15%;
+.img-usa-droite, .img-urss-droite, .img-allemagne-droite{
+    width: 12%;
     position: relative;
-    left: 450px;
+    left: 600px;
     top: -130px;
 }
-.img-usa-gauche {
-    width: 15%;
+.img-usa-gauche, .img-urss-gauche, .img-allemagne-gauche{
+    width: 12%;
     position: relative;
-    left: -500px;
+    left: -600px;
     top: -130px;
 }   
 
@@ -91,7 +92,7 @@ img{
 }
 .bod-main{
     background: linear-gradient(191deg,rgba(87, 7, 7, 1) 15%, rgba(107, 10, 75, 1) 50%, rgba(62, 21, 69, 1) 76%, rgba(43, 7, 7, 1) 100%);
-    height:1000px; 
+    height: 1200px;
     text-align: center;
 }
 
@@ -130,7 +131,7 @@ img{
 
 .retour{
     position: relative;
-    left:-695px;
+    left:-885px;
     top: 11px;
     background: linear-gradient(179deg,rgba(89, 101, 105, 1) 16%, rgba(73, 83, 89, 1) 32%, rgba(74, 76, 92, 1) 54%, rgba(77, 94, 94, 1) 64%);
     border: #020024;
@@ -141,19 +142,31 @@ img{
     height: 150px;
 }
 .GIT-boutton{
-    position: absolute;
-    left: 200px;
-    top: 30px;
+    position: relative;
+    text-align:center ;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    left: 1400px;
+    top: -65px;
     background: rgb(56, 55, 55);
     border: #020024;
     border-radius: 10px;
     padding: 3px;
     color: #c3c3c3;
 }
-.QUIZZ-boutton{
-    position: absolute;
-    left: 1200px;
-    top: 30px;
+.QUIZZ-boutton h3 {
+    position: relative;
+    text-align:center ;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    left: 200px;
+    top: 10px;
     background: rgb(56, 55, 55);
     border: #020024;
     border-radius: 10px;
